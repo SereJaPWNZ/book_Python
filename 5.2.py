@@ -24,6 +24,4 @@ list_car = ['Toyota', 'Honda', 'Nissan', 'Mitsubishi',
 if car_model.title() not in list_car:
     print(f'Марки автомобиля {car_model.title()} нет в нашем автосалоне')
 car_model = 'Ford'
-if car_model.title() in list_car:
-    print(f'У нас есть в наличии автомобили марки {
-          car_model.title()}')
+print(car_model.title() in list_car)
