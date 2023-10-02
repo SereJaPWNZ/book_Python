@@ -2,3 +2,14 @@
 # • Сохраните числа от 1 до 9 в списке.
 # • Переберите элементы списка.
 # • Используйте цепочку if-elif-else в цикле для вывода правильного окончания чис- лительного для каждого числа. Программа должна выводить числительные "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", причем каждый результат должен располагаться в от- дельной строке.
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+for number in numbers:
+    if number == 1:
+        print(f'{number}st', end=' ')
+    elif number == 2:
+        print(f'{number}nd', end=' ')
+    elif number == 3:
+        print(f'{number}rd', end=' ')
+    else:
+        print(f'{number}th', end=' ')
