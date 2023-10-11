@@ -5,5 +5,5 @@ cities = {'London': {'country': 'United_Kingdom', 'population': 8679441, 'fact':
 
 
 for key, values in cities.items():
-    print(f'\nНазвание города: {key}\nНазвание страны{values['country']}\nПопуляция{
+    print(f'\nНазвание города: {key}\nНазвание страны: {values['country']}\nПопуляция: {
           values['population']}\nИнтересный факт: {values['fact']}')
