@@ -3,5 +3,7 @@
 flag = True
 while flag:
     text = input('Введите топпинг для пиццы (или ‘quit’ для окончания): ')
+
     if text == 'quit':
         flag = False
+    print('Ваш типпинг добавлен в заказ.')
