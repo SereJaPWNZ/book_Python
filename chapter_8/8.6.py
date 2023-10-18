@@ -19,7 +19,7 @@ while True:
     elif len(city_name) > 0:
         format_adress = city_country(city_name, 'russia')
     elif len(country) > 0:
-        format_adress = city_country('volgograd', 'russia')
+        format_adress = city_country('volgograd', country)
     else:
         print('Значения названия города и страны не заданы, попробуйте еще раз!')
         break
