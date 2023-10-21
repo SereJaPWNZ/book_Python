@@ -9,6 +9,6 @@ def conclusion_components(*components_sandwich):
         print(f'- {component_sandwich}')
 
 
-conclusion_components('df', 'fd', 'ld')
-conclusion_components('df')
-conclusion_components('df', 23, True, 0.1)
+conclusion_components('булка', 'сыр', 'огурцы', 'котлета', 'соус')
+conclusion_components('сыр', 'огурцы')
+conclusion_components('котлета', 'соус')
