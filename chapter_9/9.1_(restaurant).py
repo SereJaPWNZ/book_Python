@@ -15,10 +15,10 @@ class Restaurant():
     def open_restaurant(self):
         '''Вывод названия ресторана'''
         print(f'{self.restaurant_name} - ресторан открыт!')
-my_restaurant = Restaurant('Volgograd', 'Russian')
+restaurant = Restaurant('Volgograd', 'Russian')
 
-print(f'Название ресторана - {my_restaurant.restaurant_name.title()}.')
-print(f'Тип кухни ресторана - {my_restaurant.cuisine_type.title()}.')
+print(f'Название ресторана - {restaurant.restaurant_name.title()}.')
+print(f'Тип кухни ресторана - {restaurant.cuisine_type.title()}.')
 
-my_restaurant.open_restaurant()
-my_restaurant.describe_restaurant()
+restaurant.open_restaurant()
+restaurant.describe_restaurant()
