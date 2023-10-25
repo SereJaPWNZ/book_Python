@@ -3,5 +3,6 @@
         "editor.defaultFormatter": "ms-python.autopep8"
     },
     "python.formatting.provider": "none",
-    "vscodeGoogleTranslate.preferredLanguage": "English"
+    "vscodeGoogleTranslate.preferredLanguage": "English",
+    "editor.rulers": [100]
 }
