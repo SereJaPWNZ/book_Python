@@ -3,15 +3,16 @@
 class Restaurant():
     '''модель ресторана'''
 
-    def __init__(self, restaurant_name, cuisine_type):
-        '''Инициация атрибутов названия ресторана и его типа кухни'''
-        self.restaurant_name = restaurant_name
+    def __init__(self, cuisine_type):
+        '''Инициация атрибута типом кухни'''
         self.cuisine_type = cuisine_type
 
     def describe_restaurant(self):
         '''Вывод описания ресторана'''
         print(f'Тип кухни - {self.cuisine_type}.')
 
-    def open_restaurant(self):
-        '''Вывод названия ресторана'''
-        print(f'{self.restaurant_name} - ресторан открыт!')
+restaurant_1 = Restaurant('Японская')
+restaurant_2 = Restaurant('Русская')
+restaurant_3 = Restaurant('Европейская')
+
+print(f'Наши кухни: {restaurant_1.cuisine_type.title()}, {restaurant_2.cuisine_type.title()}, {restaurant_3.cuisine_type.title()}')

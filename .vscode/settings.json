@@ -1,8 +1,0 @@
-{
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
-    },
-    "python.formatting.provider": "none",
-    "vscodeGoogleTranslate.preferredLanguage": "English",
-    "editor.rulers": [100]
-}
