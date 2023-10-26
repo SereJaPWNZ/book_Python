@@ -19,13 +19,18 @@ class User():
 
     def greet_user(self):
         '''Вывод персональных приветствий'''
-        print(f'Добро пожаловать, {self.first_name.title()} {self.last_name.title()}!')
+        print(
+            f'Добро пожаловать, {self.first_name.title()} {self.last_name.title()}!')
 
-person_1 = User(first_name='andrey', last_name='Smith', birthday='12.05.1990', have_pets='True')
 
-person_2 = User(first_name='John', last_name='Doe', birthday='23.10.2000', have_pets='False')
+person_1 = User(first_name='andrey', last_name='Smith',
+                birthday='12.05.1990', have_pets='True')
 
-person_3 = User(first_name='Jane', last_name='Doe', birthday='01.01.2021', have_pets='True')
+person_2 = User(first_name='John', last_name='Doe',
+                birthday='23.10.2000', have_pets='False')
+
+person_3 = User(first_name='Jane', last_name='Doe',
+                birthday='01.01.2021', have_pets='True')
 
 person_1.describe_user()
 person_2.describe_user()
