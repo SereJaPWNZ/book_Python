@@ -26,8 +26,19 @@ class Car():
         else:
             print("You can't roll back an odometer!")
 
+    def increment_odometer(self, miles):
+        '''Увеличение показателей одометра с заданным приращением.'''
+        self.odometer_reading += miles
+        return self.odometer_reading
 
-my_new_car = Car('suzuki', 'x', 1996)
-my_new_car.odometer_reading = 39
-my_new_car.update_odometr(0)
-my_new_car.read__odometer()
+
+# my_new_car = Car('suzuki', 'x', 1996)
+# my_new_car.odometer_reading = 39
+# my_new_car.update_odometr(40)
+# my_new_car.read__odometer()
+my_used_car = Car('suzuki', 'x', 1996)
+my_used_car.update_odometr(3000)
+my_used_car.increment_odometer(1000)
+my_used_car.read__odometer()
+my_used_car.update_odometr(7000)
+my_used_car.read__odometer()
