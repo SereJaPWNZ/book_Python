@@ -20,11 +20,14 @@ class Car():
         print(f'{self.odometer_reading}')
 
     def update_odometr(self, mileage):
-        '''Обновление значений одометра'''
-        self.odometer_reading = mileage
+        '''Устанавливает на одометре заданное значение. При попытке обратной подкрутки изменение отклоняется.'''
+        if mileage > self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("You can't roll back an odometer!")
 
 
 my_new_car = Car('suzuki', 'x', 1996)
 my_new_car.odometer_reading = 39
-my_new_car.update_odometr(90)
+my_new_car.update_odometr(0)
 my_new_car.read__odometer()
