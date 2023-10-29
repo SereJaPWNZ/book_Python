@@ -25,8 +25,8 @@ class Restaurant():
 
 restaurant = Restaurant('Volgograd', 'Russian')
 
-restaurant_name = restaurant.restaurant_name
-print(restaurant_name)
+name_restaurant = restaurant.restaurant_name
+print(name_restaurant)
 restaurant_type = restaurant.cuisine_type
 print(restaurant_type)
 
