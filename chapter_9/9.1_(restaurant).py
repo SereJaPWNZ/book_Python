@@ -1,5 +1,10 @@
-# создайте класс с именем Restaurant. Метод __init__() класса Restaurant должен содержать два атрибута: restaurant_name и cuisine_type. Создайте метод describe_restaurant(), который выводит два атрибута, и метод open_restaurant(), который выводит сообщение о том, что ресторан открыт. 
-# Создайте на основе своего класса экземпляр с именем restaurant. Выведите два атрибута по отдельности, затем вызовите оба метода.
+# создайте класс с именем Restaurant. 
+# Метод __init__() класса Restaurant должен содержать два атрибута: 
+# restaurant_name и cuisine_type. 
+# Создайте метод describe_restaurant(), который выводит два атрибута, 
+# и метод open_restaurant(), который выводит сообщение о том, что ресторан открыт. 
+# Создайте на основе своего класса экземпляр с именем restaurant. 
+# Выведите два атрибута по отдельности, затем вызовите оба метода.
 class Restaurant():
     '''модель ресторана'''
 
@@ -10,15 +15,17 @@ class Restaurant():
 
     def describe_restaurant(self):
         '''Вывод описания ресторана'''
-        print(f'Тип кухни - {self.cuisine_type}.')
+        print(f'Ресторан - {self.restaurant_name} c типом кухни - {self.cuisine_type}.')
 
     def open_restaurant(self):
-        '''Вывод названия ресторана'''
+        '''Вывод сообщения об открытии ресторана'''
         print(f'{self.restaurant_name} - ресторан открыт!')
 restaurant = Restaurant('Volgograd', 'Russian')
 
-print(f'Название ресторана - {restaurant.restaurant_name.title()}.')
-print(f'Тип кухни ресторана - {restaurant.cuisine_type.title()}.')
+restaurant_name = restaurant.restaurant_name
+print(restaurant_name)
+restaurant_type = restaurant.cuisine_type
+print(restaurant_type)
 
-restaurant.open_restaurant()
 restaurant.describe_restaurant()
+restaurant.open_restaurant()
