@@ -39,13 +39,13 @@ class Battery():
         power = f'This car has a {self.battery_size} -kWh battery.'
         return power
     
-    def get_range(self):
+    def get_range_iterable(self):
         '''Выводит приблизительный запас хода для аккумулятора'''
         if self.battery_size == 75:
-            range = 260
+            stock = 260
         elif self.battery_size == 100:
-            range = 315
-        print(f"This car can go about {range} miles on a full charge.")
+            stock = 315
+        print(f"This car can go about {stock} miles on a full charge.")
 
 
 class ElectricCar(Car):
@@ -59,4 +59,4 @@ class ElectricCar(Car):
 my_tesla = ElectricCar('tesla', 'x', 2013)
 print(my_tesla.get_descriptive_name())
 print(my_tesla.battery.describe_battery())
-my_tesla.battery.get_range()
+my_tesla.battery.get_range_iterable()
