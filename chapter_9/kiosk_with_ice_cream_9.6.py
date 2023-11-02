@@ -25,9 +25,14 @@ class Restaurant():
 class IceCreamStand(Restaurant):
     '''Представляет аспекты ресторана, специфические для киоска с мороженным.'''
 
-    
+    def __init__(self, restaurant_name, cuisine_type, flavors):
+        '''Инициализируем атрибуты класса родителя. Добавляем атрибут со списком хранимых сортов мороженного'''
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = flavors
 
+    def output_of_the_list_of_ice_cream_varieties(self):
+        '''Вывод списка с сортами мороженного'''
+        return self.flavors
 
-
-
-restaurant = Restaurant('Volgograd', 'Russian')
+restaurant = IceCreamStand('Anime', 'Все типы', ('Sort- A', 'Sort - B', 'Sort - C'))
+print(restaurant.output_of_the_list_of_ice_cream_varieties())
