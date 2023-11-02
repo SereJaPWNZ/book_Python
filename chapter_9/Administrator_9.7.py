@@ -29,7 +29,7 @@ class User():
 class Admin(User):
     '''Учетный профиль администратора'''
 
-    def __init__(self, first_name, last_name, birthday, have_pets, privileges):
+    def __init__(self, first_name, last_name, birthday, have_pets, privileges=['разрешено добавлять сообщения', 'разрешено удалять пользователей', 'разрешено банить пользователей']):
         '''Инициализируем атрибуты родителя. Добавляем атрибут привилегий'''
         super().__init__(first_name, last_name, birthday, have_pets)
         self.privileges = privileges
@@ -38,5 +38,5 @@ class Admin(User):
         '''Отдаем привелегии'''
         return self.privileges
     
-admin = Admin('Admin', '-', '23.02.1997', False, ['разрешено добавлять сообщения', 'разрешено удалять пользователей', 'разрешено банить пользователей'])
+admin = Admin('Admin', '-', '23.02.1997', False)
 print(admin.show_privileges())
