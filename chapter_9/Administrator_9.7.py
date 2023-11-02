@@ -35,7 +35,7 @@ class Admin(User):
         self.privileges = privileges
 
     def show_privileges(self):
-        '''Отдаем привелегии'''
+        '''Возвращает привилегии'''
         return self.privileges
     
 admin = Admin('Admin', '-', '23.02.1997', False)
