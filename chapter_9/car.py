@@ -53,7 +53,7 @@ class Car():
 #         print(f'{self.odometer_reading}')
 
 #     def update_odometr(self, mileage):
-#         '''Устанавливает на одометре заданное значение. 
+#         '''Устанавливает на одометре заданное значение.
 # При попытке обратной подкрутки изменение отклоняется.'''
 #         if mileage > self.odometer_reading:
 #             self.odometer_reading = mileage
