@@ -1,31 +1,5 @@
-class Car():
-    """Простая модель автомобиля."""
-
-    def __init__(self, make, model, year):
-        self.make = make
-        self.model = model
-        self.year = year
-        self.odometer_reading = 0
-
-    def get_descriptive_name(self):
-        '''Возвращаем отформатированное описание'''
-        long_name = f"{self.year} {self.make} {self.model}"
-        return long_name.title()
-     
-    def read_odometer(self):
-        '''Выводит пробег машины'''
-        print(f"This car has {self.odometer_reading} miles on it.")
-
-    def update_odometer(self, mileage):
-        '''Устанавливает на одометре заданное значение. При попытке обратной подкрутки изменение отклоняется.'''
-        if mileage >= self.odometer_reading:
-            self.odometer_reading = mileage
-        else:
-            print("You can't roll back an odometer!")
-
-    def increment_odometer(self, miles):
-        '''Увеличение показателей одометра с заданным приращением.'''
-        self.odometer_reading += miles
+'''Набор классов для представления электромобилей.'''
+from car import Car
 
 class Battery():
     '''Простая модель аккумулятора'''
@@ -36,9 +10,8 @@ class Battery():
 
     def describe_battery(self):
         """Выводит информацию о мощности аккумулятора."""
-        power = f'This car has a {self.battery_size} -kWh battery.'
-        return power
-    
+        power_battery = f'This car has a {self.battery_size} -kWh battery.'
+        return power_battery
     def get_range_iterable(self):
         '''Выводит приблизительный запас хода для аккумулятора'''
         if self.battery_size == 75:
@@ -50,9 +23,9 @@ class Battery():
 
 class ElectricCar(Car):
     '''Представляет аспекты машины, специфические для электромобилей.'''
-    
     def __init__(self, make, model, year):
-        '''Инициализирует атрибуты класса-родителя. Затем инициализирует атрибуты, специфические для электромобиля.'''
+        '''Инициализирует атрибуты класса-родителя.
+        Затем инициализирует атрибуты, специфические для электромобиля.'''
         super().__init__(make, model, year)
         self.battery = Battery()
 
