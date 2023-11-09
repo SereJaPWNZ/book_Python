@@ -27,8 +27,12 @@ class Admin(User):
         privileges = ['разрешено добавлять сообщения', 'разрешено удалять пользователей', 'разрешено банить пользователей']
         self.privileges = privileges
 
-class Privileges(Admin):
+class Privileges():
     '''Привелегии'''
-    def see_privileges(self, privileges):
+    def __init__(self, privileges=None):
+        '''Инициализация атрибутов родителя'''
+        self.privileges = privileges
+
+    def see_privileges(self):
         '''Вывод привилегий'''
-        return privileges
+        return self.privileges
