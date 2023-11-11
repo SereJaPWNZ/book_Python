@@ -8,7 +8,8 @@ class Restaurant():
 
     def describe_restaurant(self):
         '''Вывод описания ресторана'''
-        print(f'Ресторан - {self.restaurant_name} c типом кухни - {self.cuisine_type}.')
+        print(
+            f'Ресторан - {self.restaurant_name} c типом кухни - {self.cuisine_type}.')
 
     def open_restaurant(self):
         '''Вывод сообщения об открытии ресторана'''
